@@ -14,18 +14,24 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link href="css/styles.css" type="text/css" rel="Stylesheet" />
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/html" src="src/navbar.html"></script>
+    <script type="text/html" src="src/learnmore.html"></script>
   </head>
 
   <body>
     <div id="header-hero-container">
-      <header>
+      <div id="navbar-placeholder">
+
+      </div>
+      <!-- <header>
         <div class="flex container">
           <a id="logo" href="#">STATED.</a>
           <nav>
@@ -47,8 +53,10 @@
               <li id="close-flyout"><span class="fas fa-times"></span></li>
             </ul>
           </nav>
+
         </div>
-      </header>
+      </header> -->
+   
 
       <section id="hero">
         <div class="fade"></div>
@@ -247,7 +255,7 @@
             have properties available.
           </p>
           </ul>
-          <button class="rounded" id="learnMore" onclick="learnMore();">Learn More</button>
+          <button class="rounded"> <a href="learnMore.html">Learn More</a></button>
         </div>
       </div>
     </section>
@@ -589,9 +597,12 @@
       function generateReport() {
    window.location.href = '#the-best';
  }
-
-//  document.getElementById("clickMe").onclick = "src/learnMore.js";
     </script>
-    <!-- <script type="text/javascript" src="src/learnMore.js"></script> -->
+    <script>
+      $(function(){
+        $("#navbar-placeholder").load("navbar.html");
+      });
+      </script>
+
   </body>
 </html>
