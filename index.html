@@ -8,15 +8,32 @@
   </head>
 
 <body>
-  <section id="hero">
-     <!-- <div class="fade"></div> -->
-     <h1 class="hero-h1">Next-Door Group</h1>
-      <div class="hero-text">
+  
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; </button>
+     <h1 class="main-h1">Next-Door Group</h1>
+      <div class="main-text">
        <p>Dallas-DFW, Texas Real Estate Solutions for Sellers, Investment property Buyers, And Investors.</p>
         <p>We buy, fix, and sell Texas real estate to improve our communities and help local investors participate in the real estate market right along side us. </p>
       </div>
-      
-  </section>
-
+    </div>
 </body>
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
 </html>
