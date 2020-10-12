@@ -1,28 +1,32 @@
 <!-- @format -->
 
-<header>
-  <div class="navbar-placeholder">
-    <a id="logo" href="#">STATED.</a>
-    <nav>
-      <button id="nav-toggle" class="hamburger-menu">
-        <span class="strip"></span>
-        <span class="strip"></span>
-        <span class="strip"></span>
-      </button>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Buy</a>
+      <a href="#">Sell</a>
+      <a href="#">Clients' Review</a>
+      <a href="#">About Us</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </div>
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
 
-      <ul id="nav-menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li>
-          <a href="http://www.google.com" target="_blank">Properties</a>
-        </li>
-        <li><a href="#">Agents</a></li>
-        <li>
-          <a href="#the-best"> <div onClick="generateReport();">About</div></a>
-        </li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
-        <li id="close-flyout"><span class="fas fa-times"></span></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <script>
+    $(function () {
+      $("#main").load("navbar.html");
+    });
+  </script>
