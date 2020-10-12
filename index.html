@@ -3,37 +3,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title >Next Door Group</title>
+    <title>Next Door Group</title>
     <link href="css/styles.css" type="text/css" rel="Stylesheet" />
+    <link href="navbar.html" type="html" rel="import" />
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+    <!-- <script>
+      $(function () {
+        $("#mySidebar").load("navbar.html");
+      });
+    </script> -->
   </head>
 
-<body>
-  
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
+  <body>
+    <!-- <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="#">Buy</a>
+      <a href="#">Sell</a>
+      <a href="#">Clients' Review</a>
+      <a href="learnmore.html">About Us</a>
+      <a href="#">FAQ</a>
       <a href="#">Contact</a>
-    </div>
+    </div> -->
     <div id="main">
-      <button class="openbtn" onclick="openNav()">&#9776; </button>
-     <h1 class="main-h1">Next-Door Group</h1>
+      <!-- <button class="openbtn" onclick="openNav()">&#9776;</button> -->
+      <h1 class="main-h1">Next-Door Group</h1>
       <div class="main-text">
-       <p>Dallas-DFW, Texas Real Estate Solutions for Sellers, Investment property Buyers, And Investors.</p>
-        <p>We buy, fix, and sell Texas real estate to improve our communities and help local investors participate in the real estate market right along side us. </p>
+        <p>
+          Dallas-DFW, Texas Real Estate Solutions for Sellers, Investment
+          property Buyers, And Investors.
+        </p>
+        <p>
+          We buy, fix, and sell Texas real estate to improve our communities and
+          help local investors participate in the real estate market right along
+          side us.
+        </p>
       </div>
     </div>
-</body>
-<script>
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
+  </body>
+  <!-- <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script> -->
+  <script>
+    $.get("navbar.html", function (data) {
+      $("#main").replaceWith(data);
+    });
   </script>
 </html>
