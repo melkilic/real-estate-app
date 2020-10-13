@@ -1,46 +1,36 @@
 /** @format */
-
 * {
   padding: 0;
   margin: 0;
 }
-
 html {
-  background-color: #eaf0f2;
+  background-color: rgb(214, 198, 197);
 }
-
 body {
   font: 16px/1.6 Arial, sans-serif;
 }
-
 header {
   text-align: center;
   padding-top: 100px;
   margin-bottom: 190px;
 }
-
 header h1 {
   font: normal 32px/1.5 "Open Sans", sans-serif;
   color: #92999f;
   padding-bottom: 16px;
 }
-
 header h2 {
   color: #f05283;
 }
-
 header span {
   color: #92999f;
 }
-
 /* The footer is fixed to the bottom of the page */
-
 footer {
   position: fixed;
   bottom: 0;
   /* padding: 0; */
 }
-
 @media (max-height: 800px) {
   footer {
     position: static;
@@ -49,73 +39,61 @@ footer {
     padding-top: 40px;
   }
 }
-
 .footer-distributed {
+  position: relative;
   background-color: rgba(193, 52, 96, 0.133);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  padding: 50px 50px 60px 50px;
-  margin-top: 80px;
+  padding: 5px 5px 5px 100px;
+  /* margin-top: 80px; */
 }
-
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
   display: inline-block;
   vertical-align: top;
 }
-
 /* Footer left */
-
 .footer-distributed .footer-left {
   width: 30%;
 }
-
 .footer-distributed h3 {
-  color: #ffffff;
+  color: #33383b;
   font: normal 36px "Cookie", cursive;
   margin: 0;
 }
-
 /* The company logo */
-
 .footer-distributed .footer-left img {
   width: 30%;
 }
-
 .footer-distributed h3 span {
-  color: #92999f;
+  color: rgb(254, 247, 255);
 }
-
 /* Footer links */
-
 .footer-distributed .footer-links {
-  color: #ffffff;
+  color: #33383b;
   margin: 20px 0 12px;
 }
-
 .footer-distributed .footer-links a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
 }
-
 .footer-distributed .footer-company-name {
   color: #8f9296;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
 }
-
 /* Footer Center */
-
 .footer-distributed .footer-center {
   width: 35%;
+  margin-top: 75px ;
+  
 }
-
 .footer-distributed .footer-center i {
   background-color: #33383b;
   color: #ffffff;
@@ -128,37 +106,33 @@ footer {
   margin: 10px 15px;
   vertical-align: middle;
 }
-
 .footer-distributed .footer-center i.fa-envelope {
   font-size: 17px;
   line-height: 38px;
 }
-
 .footer-distributed .footer-center p {
   display: inline-block;
-  color: #ffffff;
+  color: #33383b;
   vertical-align: middle;
   margin: 0;
+  font-size: 20px;
 }
-
 .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
 }
-
 .footer-distributed .footer-center p a {
-  color: #92999f;
+  color: #33383b;
   text-decoration: none;
 }
-
 /* Footer Right */
-
 .footer-distributed .footer-right {
   width: 30%;
+  margin-top: 75px;
+  
 }
-
 .footer-distributed .footer-company-about {
   line-height: 20px;
   color: #92999f;
@@ -166,19 +140,16 @@ footer {
   font-weight: normal;
   margin: 0;
 }
-
 .footer-distributed .footer-company-about span {
   display: block;
-  color: #ffffff;
-  font-size: 18px;
+  color: #33383b;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 .footer-distributed .footer-icons {
   margin-top: 25px;
 }
-
 .footer-distributed .footer-icons a {
   display: inline-block;
   width: 35px;
@@ -186,34 +157,29 @@ footer {
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
-
   font-size: 20px;
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-
   margin-right: 3px;
   margin-bottom: 5px;
 }
 footer small {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 1rem;
   display: block;
   text-align: center;
-  color: #92999f;
+  color: rgb(69, 41, 69);
 }
-
 footer small a {
-  color: rgb(212, 208, 208);
+  color:  rgb(254, 247, 255);
   text-decoration: none;
 }
-
 footer small a:hover {
-  color: #fff;
+  color :#33383b;
 }
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
-
 @media (max-width: 880px) {
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
@@ -223,7 +189,6 @@ footer small a:hover {
     margin-bottom: 40px;
     text-align: center;
   }
-
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
