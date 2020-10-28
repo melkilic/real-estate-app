@@ -3,8 +3,7 @@
   <head>
     <title>Next Door Group</title>
     <link href="css/styles.css" type="text/css" rel="Stylesheet" />
-    <link href="navbar.html" type="html" rel="import" />
-    <script src="//code.jquery.com/jquery.min.js"></script>
+    <link href="./navbar.html" type="html" rel="import" />
 
     <!-- <script>
       $(function () {
@@ -33,12 +32,16 @@
     $.get("navbar.html", function (data) {
       $("#main").replaceWith(data);
     });
-  </script>
+  </script> -->
 </html>
-<<<<<<< HEAD
-=======
 <!-- @format -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
+<script>
+ function triggerNavbar() {
+    $("#main").load("navbar.html");
+  };
+</script>
 
 <!DOCTYPE html>
 <html>
@@ -54,12 +57,9 @@
       rel="stylesheet"
       href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
     />
->>>>>>> b0b64e2531d8bf8187432b420c85b4a35cb18af9
 
 
 
-<<<<<<< HEAD
-=======
         <p class="footer-links">
           <a href="#">About Us</a> <br />
           <a href="#">Privacy Policy</a><br />
@@ -67,10 +67,6 @@
         </p>
       </div>
 
-      <div class="footer-center">
-        <!-- <div>
-          <i class="fa fa-map-marker"></i>
-        </div> -->
 
         <div>
           <i class="fa fa-phone"></i>
@@ -111,4 +107,4 @@
     </footer>
   </body>
 </html>
->>>>>>> b0b64e2531d8bf8187432b420c85b4a35cb18af9
+>>>>>>> 788b00d66274650564ed24d815d70b51352475cd

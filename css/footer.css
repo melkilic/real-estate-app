@@ -91,8 +91,7 @@ footer {
 /* Footer Center */
 .footer-distributed .footer-center {
   width: 35%;
-  margin-top: 75px ;
-  
+  margin-top: 75px;
 }
 .footer-distributed .footer-center i {
   background-color: #33383b;
@@ -131,7 +130,6 @@ footer {
 .footer-distributed .footer-right {
   width: 30%;
   margin-top: 75px;
-  
 }
 .footer-distributed .footer-company-about {
   line-height: 20px;
@@ -172,11 +170,11 @@ footer small {
   color: rgb(69, 41, 69);
 }
 footer small a {
-  color:  rgb(254, 247, 255);
+  color: rgb(254, 247, 255);
   text-decoration: none;
 }
 footer small a:hover {
-  color :#33383b;
+  color: #33383b;
 }
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */

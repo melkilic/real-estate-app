@@ -1,32 +1,35 @@
-/* Privacy Policy page */
-html{
-    background-color: #000034;
+/**
+ * /* Privacy Policy page
+ *
+ * @format
+ */
+
+html {
+  background-color: #000034;
 }
 #policy-main {
-    position: fixed;
-    margin: 100px;
-     color: whitesmoke;
-   }
-   
+  position: relative;
+  margin: 100px;
+  color: whitesmoke;
+}
+
 #policy-main .policy-h3 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .policy-text {
-    border-style: initial;
-    border-color: lightgray;
-    margin: 10px;
-    /* text-align: center; */
-    padding: 30px ;
-    padding-left: 10px;
-    background-color:#000045;
+  border-style: initial;
+  border-color: lightgray;
+  margin: 10px;
+  /* text-align: center; */
+  padding: 30px;
+  padding-left: 10px;
+  background-color: #000045;
 }
 
 .policy-text p {
-    font-size: 20px;
+  font-size: 20px;
 }
 .policy-text li {
-    font-size: 20px;
+  font-size: 20px;
 }
-
-   
