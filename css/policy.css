@@ -5,12 +5,12 @@
  */
 
 html {
-  background-color: #000034;
+  background-color: whitesmoke;
 }
 #policy-main {
   position: relative;
   margin: 100px;
-  color: whitesmoke;
+  color: lightgray;
 }
 
 #policy-main .policy-h3 {
@@ -24,7 +24,7 @@ html {
   /* text-align: center; */
   padding: 30px;
   padding-left: 10px;
-  background-color: #000045;
+  background-color: black;
 }
 
 .policy-text p {
