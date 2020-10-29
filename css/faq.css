@@ -1,0 +1,44 @@
+/**
+ * /* Privacy Policy page
+ *
+ * @format
+ */
+
+html {
+  background-color: whitesmoke;
+  display: flex;
+}
+#policy-main {
+  position: relative;
+  margin: 100px;
+  color: lightgray;
+}
+
+#policy-main .policy-h3 {
+  font-weight: bold;
+}
+
+.policy-text {
+  border-style: initial;
+  border-color: lightgray;
+  margin: 10px;
+  padding: 30px;
+  padding-left: 10px;
+  background-color: black;
+}
+
+.policy-text p {
+  font-size: 20px;
+}
+.policy-text li {
+  font-size: 20px;
+}
+
+img {
+  margin: center;
+  width: 83.5vw;
+  height: 50vh;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
